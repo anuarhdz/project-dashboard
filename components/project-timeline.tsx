@@ -299,7 +299,7 @@ export function ProjectTimeline({ viewOptions }: ProjectTimelineProps) {
                     </span>
                   </div>
                   <div className="text-xs text-muted-foreground mt-1">
-                    {project.startDate.toLocaleDateString()} - {project.endDate.toLocaleDateString()}
+                    {project.startDate.toLocaleDateString("vi")} - {project.endDate.toLocaleDateString("vi")}
                   </div>
                 </div>
               </div>
