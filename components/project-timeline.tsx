@@ -189,7 +189,7 @@ export function ProjectTimeline({ viewOptions }: ProjectTimelineProps) {
         </div>
         <div className="flex items-center gap-2">
           <span className="text-sm font-medium text-muted-foreground hidden sm:inline">
-            {currentDate.toLocaleString("default", {
+            {currentDate.toLocaleString("vi", {
               month: "long",
               year: "numeric",
             })}
@@ -334,7 +334,7 @@ export function ProjectTimeline({ viewOptions }: ProjectTimelineProps) {
 }
 
 function formatDate(date: Date) {
-  const dayName = date.toLocaleString("default", { weekday: "short" })
+  const dayName = date.toLocaleString("vi", { weekday: "short" })
   const dayNum = date.getDate()
   return { dayName, dayNum }
 }
